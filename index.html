@@ -10,192 +10,219 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header__content">
-                <img src="" alt="" class="logo">
-                <h2 class="header__content_title"></h2>
-                <p class="header__content-subtitle"></p>
+            <div class="header__logo">
+                <a href="index.html">
+                <img src="img/logo.png" alt="logo" class="logo">
+                <div class="header__content">
+                <h2 class="header__content_title">REACT PIZZA</h2>
+                <p class="header__content-subtitle">самая вкусная пицца во вселенной</p>
+            </a>
+            </div>
             </div>
             <div class="header__basket">
-                <div class="header__basket-sum"></div>
-                <div class="header__basket-order"></div>
+                <div class="header__basket-sum">
+                    <a href="#" class="basket-link">
+                    <span>520 ₽</span>
+                </a>
+                <span>|</span>
+                    </div>
+                <div class="header__basket-order">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.33333 16.3333C7.06971 16.3333 7.66667 15.7364 7.66667 15C7.66667 14.2636 7.06971 13.6667 6.33333 13.6667C5.59695 13.6667 5 14.2636 5 15C5 15.7364 5.59695 16.3333 6.33333 16.3333Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.3333 16.3333C15.0697 16.3333 15.6667 15.7364 15.6667 15C15.6667 14.2636 15.0697 13.6667 14.3333 13.6667C13.597 13.6667 13 14.2636 13 15C13 15.7364 13.597 16.3333 14.3333 16.3333Z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.78002 4.99999H16.3334L15.2134 10.5933C15.1524 10.9003 14.9854 11.176 14.7417 11.3722C14.4979 11.5684 14.1929 11.6727 13.88 11.6667H6.83335C6.50781 11.6694 6.1925 11.553 5.94689 11.3393C5.70128 11.1256 5.54233 10.8295 5.50002 10.5067L4.48669 2.82666C4.44466 2.50615 4.28764 2.21182 4.04482 1.99844C3.80201 1.78505 3.48994 1.66715 3.16669 1.66666H1.66669" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                                            <span>3</span>
+                </div>
             </div>
+            
         </header>
         <main class="main">
+        <hr>
             <nav class="nav">
                 <ul class="nav__pizza-filter">
-                    <li><button class="filter-button"></button></li>
-                    <li><button class="filter-button"></button></li>
-                    <li><button class="filter-button"></button></li>
-                    <li><button class="filter-button"></button></li>
-                    <li><button class="filter-button"></button></li>
-                    <li><button class="filter-button"></button></li>
+                    <li><button class="filter-button">Все</button></li>
+                    <li><button class="filter-button">Мясные</button></li>
+                    <li><button class="filter-button">Вегетарианская</button></li>
+                    <li><button class="filter-button">Гриль</button></li>
+                    <li><button class="filter-button">Острые</button></li>
+                    <li><button class="filter-button">Закрытые</button></li>
                 </ul>
+                  <!--
                 <ul class="nav__sorting-tab">
-                    <li><button class="sorting-button">
+                    <li><svg></svg>
+                        <span>Сортировка по:</span>
+                      
+                        <button class="sorting-button">популярности
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>популярности</li>
+                            <li>по цене</li>
+                            <li>по алфавиту</li>
                         </ul>
                     </button></li>
-                </ul>
+                </ul>-->
             </nav>
-            <h1></h1>
+            <h1>Все пиццы</h1>
             <div class="all-pizza-boxes">
+                <div class="pizza-box-first-row">
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_1.png" alt="pizza_1" class="pizza-img">
+                    <h2 class="pizza-title">Чизбургер-пицца</h2>   
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 395 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_2.png" alt="pizza_2" class="pizza-img">
+                    <h2 class="pizza-title">Сырная</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 450 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_3.png" alt="pizza_3" class="pizza-img">
+                    <h2 class="pizza-title">Креветки по-азиатски</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 290 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_4.png" alt="pizza_4" class="pizza-img">
+                    <h2 class="pizza-title">Сырный цыпленок</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 385 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
+                    </div>
+                </div>
+            </div>  
+            <div class="pizza-box-second-row">
+                <div class="pizza-box">
+                    <img src="img/pizza_1.png" alt="pizza_1" class="pizza-img">
+                    <h2 class="pizza-title">Чизбургер-пицца</h2>
+                    <div class="pizza-configurator">
+                        <div class="pizza-dough">
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
+                        </div>
+                        <div class="pizza-size">
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
+                        </div>
+                    </div>
+                    <div class="pizza-order">
+                        <h2 class="pizza-price">от 395 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_2.png" alt="pizza_2" class="pizza-img">
+                    <h2 class="pizza-title">Сырная</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 450 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_3.png" alt="pizza_3" class="pizza-img">
+                    <h2 class="pizza-title">Креветки по-азиатски</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 290 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
                 <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
+                    <img src="img/pizza_4.png" alt="pizza_4" class="pizza-img">
+                    <h2 class="pizza-title">Сырный цыпленок</h2>
                     <div class="pizza-configurator">
                         <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
+                            <button class="pizza-dough__button">тонкое</button>
+                            <button class="pizza-dough__button">традиционное</button>
                         </div>
                         <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
+                            <button class="pizza-size__button">26 см.</button>
+                            <button class="pizza-size__button">30 см.</button>
+                            <button class="pizza-size__button">40 см.</button>
                         </div>
                     </div>
                     <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
-                    </div>
-                </div>
-                <div class="pizza-box">
-                    <img src="" alt="" class="pizza-img">
-                    <div class="h2 pizza-title"></div>
-                    <div class="pizza-configurator">
-                        <div class="pizza-dough">
-                            <button class="pizza-dough__button"></button>
-                            <button class="pizza-dough__button"></button>
-                        </div>
-                        <div class="pizza-size">
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                            <button class="pizza-size__button"></button>
-                        </div>
-                    </div>
-                    <div class="pizza-order">
-                        <h2 class="pizza-price"></h2>
-                        <button class="pizza-add__button"></button>
+                        <h2 class="pizza-price">от 385 ₽</h2>
+                        <button class="pizza-add__button"><span>+ Добавить </span></button>
                     </div>
                 </div>
             </div>
+        </div>
         </main>
     </div>
+    
 </body>
 </html>
